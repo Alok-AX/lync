@@ -1,0 +1,621 @@
+/* -----------------------------------------------------------------------------------
+
+Template Name: React Landing Page
+Template URI: 
+Description: This is React template
+Author: Alok
+Author URI: 
+Version: 1.0
+-----------------------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------------------------
+CSS INDEX
+===================
+
+1.Global CSS
+2.Header CSS
+3.banner-section CSS
+
+4.footer CSS
+5.Responsive CSS
+----------------------------------------------------------------------------------- */
+
+/*Global CSS Starts Here*/
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box
+}
+
+:root {
+    --light: #6A6C77;
+    --dark: #020617;
+    --white:#FFFFFF;
+    --red:#E50000;
+    --text-gradiant: linear-gradient(94.68deg, #FF0276 2.51%, #7209B7 56.42%);
+
+}
+body {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    background: var(--dark);
+}
+/*Global CSS Starts Here*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Satoshi', sans-serif;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 900;
+    color: var(--white);
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-size: 24px;
+    color: var(--white);
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 22px;
+}
+
+span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+
+
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 0px;
+font-family: 'Satoshi', sans-serif;
+    line-height: 1.2;
+
+
+}
+
+p {
+font-family: 'Satoshi', sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+a {
+    font-size: 16px;
+font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    text-decoration: none;
+    
+
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    margin-bottom: 0px;
+    object-fit: cover;
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+
+
+}
+
+ul {
+    padding-left: 0px;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea{
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: inherit;
+    line-height: inherit
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+.mr-auto {
+    margin-right: auto;
+}
+/*Global CSS Ends Here*/
+
+/*Header CSS Starts Here*/
+
+header {
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    transition-duration: 0.5s;
+    margin-top: 30px;
+}
+.stickyHeader .navbar{
+    height: auto;
+    transition: all 0.3s ease 0s;
+
+}
+.nav-top{
+    position: relative;
+}
+.nav-top:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-image: url('../../../src/assets/body-top-effect.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 400px;
+    z-index: 9;
+
+}
+.navbar-brand img {
+    transition: all .5s;
+    max-width: 40px;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-nav li {
+    padding: 5px 15px !important;
+}
+.navbar-nav li:last-child{
+    padding-right: 0px !important;
+}
+
+.nn-r li{
+    padding-right: 0px !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0px 0px;
+    color: var(--white);
+    transition-duration: 0.5s;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-start;
+}
+.nav-bar-bg{
+    background: linear-gradient(92.98deg, rgba(217, 217, 217, 0.07) 32.09%, rgba(217, 217, 217, 0.05) 116.98%);
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    border-radius: 100px;
+    padding: 10px 15px;
+    backdrop-filter: blur(10px);
+
+
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: var(--white);
+    transition-duration: 0.5s;
+    font-weight: 400;
+
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: center;
+}
+.nav_bar-left{
+    padding-left: 100px;
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--white);
+    font-weight: 400;
+    transition-duration: 0.5s;
+    text-decoration: underline;
+}
+
+.navbar {
+    box-shadow: none;
+    height: 90px;
+    transition: all 0.3s ease 0s;
+
+}
+.ml-auto{
+    margin-left: auto;
+}
+
+.stickyHeader {
+    background: var(--white);
+    padding: 0px !important;
+    box-shadow: 0px 1px 11px -1px var(--dark);
+    transition-duration: 0.5s;
+}
+.right-side-menu-list li{
+    padding: 0;
+}
+.right-side-menu-list li:last-child{
+    padding: 0 !important;
+}
+
+.right-side-menu-list li:first-child a{
+    display: flex;
+    align-items: center;
+    color: var(--dark);
+    gap: 10px;
+}
+.right-side-menu-list li:first-child a img{
+    margin-left: 0;
+    height: 14px;
+    width: 14px;
+    object-fit: contain;
+    
+}
+
+.stickyHeader .right-side-menu-list li:last-child a{
+    border:1px solid  var(--white);
+    transition-duration: 0.5s;
+}
+.stickyHeader .right-side-menu-list li:last-child a:hover{
+    background-color: var(--primary);
+    color: var(--white);
+}
+ .right-side-menu-list li:last-child a:hover{
+   letter-spacing: 1px;
+   transition-duration: 0.5s;
+}
+.stickyHeader .navbar-expand-lg .navbar-nav .nav-link {
+    color:var(--white);
+    border: none !important;
+    transition-duration: 0.5s;
+    font-weight: 500;
+}
+.stickyHeader .navbar-expand-lg .navbar-nav .nav-link.text-white{
+    color: var(--dark) !important;
+}
+.stickyHeader .navbar-expand-lg .navbar-nav .nav-link.white-toggle:after{
+    background-image: url('../Images/arrow.png');
+}
+
+.slick-dots li.slick-active button:before {
+    content: none;
+}
+.stickyHeader .get-white-touch{
+    border: 1px solid var(--dark) !important;
+}
+
+.stickyHeader .right-side-menu-list .text-white{
+    color: var(--dark) !important;
+ 
+} 
+
+.stickyHeader .navbar {
+    border: none !important;
+}
+
+.stickyHeader .navbar-light .navbar-nav .active>.nav-link,
+.stickyHeader .navbar-light .navbar-nav .nav-link.active,
+.stickyHeader .navbar-light .navbar-nav .nav-link.show,
+.stickyHeader .navbar-light .navbar-nav .show>.nav-link {
+    color: var(--dark);
+    border: none;
+}
+
+.stickyHeader .navbar-light .navbar-nav .nav-link:focus,
+.stickyHeader .navbar-light .navbar-nav .nav-link:hover {
+    color: var(--deep-dark);
+    border: none;
+}
+
+.stickyHeader .navbar-brand img {
+    max-width: 170px;
+    transition: all .5s;
+}
+
+.stickyHeader .navbar-light .navbar-toggler {
+    outline: 0px !important;
+}
+
+.nav-link.contactBtn {
+    background: var(--primary);
+    color: #fff !important;
+    padding: 8px 30px !important;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    display: inline-block;
+}
+.nav-link.contactBtn:hover svg path{
+    fill: var(--primary);
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.stickyHeader .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link.contactBtn.active {
+    background: #fff !important;
+    border: none !important;
+    color: var(--primary) !important;
+    border: 1px solid var(--primary) !important;
+}
+
+.nav-link.contactBtn:hover {
+    background: #fff !important;
+    border: none !important;
+    color: var(--primary) !important;
+    border: 1px solid var(--primary) !important;
+
+}
+
+.stickyHeader .nav-link.contactBtn:hover{
+    border: 1px solid var(--primary) !important;
+
+}
+.nav-bar-contact-btn{
+    display: flex;
+    align-items: center;
+    padding: 7px 16px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 30px;
+    border: 1px solid var(--primary);
+    transition-duration: 0.5s;
+
+}
+.nav-bar-contact-btn:hover{
+    background-color: var(--dark);
+    color: var(--white);
+    border: 1px solid var(--primary);
+    transition-duration: 0.5s;
+
+}
+.nav-bar-contact-btn img{
+    width: 15px;
+    margin-left: 10px;
+}
+.right-side-menu-list li a{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.right-side-menu-list li:last-child a{
+    padding: 12px 24px ;
+    background-color: var(--white);
+    border-radius: 100px;
+    color: var(--dark);
+    border:1px solid  var(--white);
+    transition-duration: 0.5s;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.right-side-menu-list li:last-child a p{
+    margin-bottom: 0;
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 700;
+}
+.right-side-menu-list li:last-child a img{
+    width: 25px;
+    height: auto;
+}
+.navbar-brand{
+    margin-left: 15px;
+}
+.close-btn{display: none;}
+.footermobile_menu{display: none;}
+.game_console_fourth_wrap p{color: #8D96B2;}
+/*Header CSS Ends Here*/
+@import "../components/heroHeading";
+@import "../components/common";
+@import "../components/blog";
+@import "../components/gameConsoleBox";
+@import "../components/product";
+@import "../components/Review";
+
+
+@media(max-width:1470px) {
+ .container{max-width: 1100px !important;}
+}
+@media(max-width:1199px) {
+    .container{max-width: 720px !important;}
+}
+
+@media(max-width:992px){
+     .mobile_view_section{display: flex;flex-direction: row-reverse;justify-content: space-between; width: 50%;}
+     .right-side-menu-list{width: 170px;}
+     .banner_section{padding-top: 180px;background-size: contain;background-position-y:42% ;}
+     h1{font-size: 65px !important;line-height: 92px !important;}
+     br{display: none;}
+     .hero_heading h5{font-size: 20px;}
+     .backed_by_col{padding-top: 80px;}
+     .backed_by_col_img img{width: 150px;}
+     .gaming_experience_section{padding: 80px 0px;}
+     h2{font-size: 43px !important;}
+     .blog_chain_img_row{flex-wrap: wrap; gap: 30px; justify-content: center;}
+     .webgaming_section{padding: 100px 0px;}
+     .webthreegaming_heading h5{ font-size: 22px;}
+     .webthreegaming_heading{padding-bottom: 40px;}
+     .complexities_main_box{padding: 40px;}
+     .complexities_main_box h4{font-size: 18px;}
+     .complexities_main_box ul li h5{font-size: 18px;}
+     .complexities_main_box ul li img{width: 20px; height: 20px;}
+     .complexities_main_box ul li{margin-bottom: 10px;}
+     .complexities_main_box .col-lg-8{width: 80%;}
+     .complexcity_right_img img{width: 390px;}
+     .game_console_section{padding-top: 0; background-size: calc(100% - 0%); padding-bottom: 0;}
+     .game_console_first{width: 100%;}
+     .gameconsole_main_row{flex-wrap: wrap;}
+     .game_console_mid{width: 48%;}
+     .game_console_last{width: 48%;}
+     .game_console_fourth_wrap img{height: 170px;}
+     .game_console_first_box_wrap{border-radius: 32px;}
+     .product_section{padding: 80px 0px;}
+     .product_head{padding-bottom: 30px;}
+     .product_section{background-size: cover;}
+     .fav_chain_heading h2{ font-size: 32px !important;}
+     .favoritechain_brand_box_img{width: 22%;}
+     .fav_chain_section{background-size: calc(100% - 0%);}
+     .fav_chain_heading h6{ font-size: 18px;}
+     .review_section{background-size: cover;}
+     .right_arrow{right: -20px !important}
+     .left_arrow{left: -20px !important; z-index: 99;}
+     .community_col h2{font-size: 32px !important;}
+     .partner_card_wrap img{width: 32%;}
+     .footer_top_section{margin-bottom: 100px;}
+     .footer_section .main_row{justify-content: center;}
+     .footer_box{margin-bottom: 30px;}
+     .footer_last_row{margin-top: 10px;}
+     .navbar-expand-lg .navbar-collapse{position: absolute;left: 0;right: 0;width: 100%;top: 75px;background: rgba(1, 4, 18, 1);padding: 25px;border-radius: 30px;}
+     .navbar-nav{gap: 20px;}
+     .close-btn{ color: rgba(141, 150, 178, 1) !important; background: none; border: 0; outline: none;}
+     .navbar-toggler{border: 0 !important; outline: none !important;}
+     .navbar-toggler:focus-visible{ box-shadow: none !important;}
+     .navbar-toggler:focus{ box-shadow: none !important;}
+     .close-btn{display: block;     font-family: 'Satoshi', sans-serif; font-weight: 400;}
+     .right-side-menu-list li:last-child a{padding: 7px 20px;}
+
+
+    } 
+
+    @media(max-width:768px){
+        .container{max-width: 540px !important;}
+        .hero_heading h1{font-size: 38px !important;line-height: 1.5 !important;}
+        .right-side-menu-list li:last-child a p{display: none;}
+        .right-side-menu-list{width: 67px;}
+        .mobile_view_section{width: 57%;}
+        .complexcity_right_img{display: none;}
+        .complexities_main_box .col-lg-8{width: 100%;}
+    }
+
+    @media(max-width:600px){
+        .container{
+            width: 100%;
+            max-width: 100% !important;
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+        }
+        .container.nav-bar-bg{padding: 10px 15px !important;}
+        .navbar{
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+        }
+        .footer_top_section .big-footer{width: 100%; padding: 0px 30px;}
+        .slick-slider{padding-left: 40px; padding-right: 40px;}
+        .right_arrow{right: 0 !important;}
+        .left_arrow{left: 0 !important;}
+        .banner_section{background-position-y: 30%;}
+        .hero_btn_row{flex-direction: column; justify-content: center; gap: 20px !important;}
+        .hero_btn_row a{width: 100%; justify-content: center;}
+        .backed_by_col_img img{width: 130px;}
+        .hero_heading h5{font-size: 14px;}
+        .hero_heading h5{padding-bottom: 0;}
+        .gaming_experience_section{padding-top: 40px;}
+        .gaming_experience_row h4{font-size: 18px; margin: 15px 0px;}
+        .blog-chain-section h2{font-size: 24px !important;}
+        .blog_chain_img_row{gap: 10px;}
+        .webthreegaming_heading h2{font-size: 24px !important;}
+        .webthreegaming_heading h5{font-size: 16px;}
+        .complexities_main_box{border-radius: 25px 25px 0px 25px; padding: 20px;}
+        .product_head h2{font-size: 24px !important;}
+        .product_head{padding-bottom: 0;}
+        .product_card_wrap img{display: none;}
+        .product_card_wrap{background: none;}
+        .product_card_wrap h5{font-size: 18px; margin-bottom: 5px;}
+        .product_card_wrap p{ font-size: 14px;}
+        .fav_chain_section{padding-top: 0px; padding-bottom: 0;}
+        .fav_chain_heading h2{font-size: 24px !important;}
+        .favoritechain_brand_box_img{width: 47%;}
+        .fav_chain_heading h6{font-size: 16px;}
+        .blog_card_wrapper{padding-top: 40px;}
+        .review_heading{padding-bottom: 40px;}
+        .review_heading h2{font-size: 24px !important;}
+        .community_col h2{font-size: 24px !important;}
+        .comunity_section_main{padding-bottom: 0;}
+        .partner_head h2{font-size: 24px !important;}
+        .partner_card_section{padding-top: 0px;}
+        .footer_top_section h2{ font-size: 24px !important;}
+        .footer_section .main_row{justify-content: flex-start;}
+        .footermobile_menu{display: inline-block;}
+        .game_console_last{width: 100%;}
+        .game_console_mid{width: 100%;}
+        .game_console_fourth_wrap{text-align: right;}
+        .game_console_fourth_wrap img{width: 200px;}
+        .game_console_fourth_wrap h4, p{text-align: left;}
+       
+    }
+
+    @media(max-width:426px){
+        .backed_by_col_img img{width: 100px;}
+        .game_console_first_box_wrap{flex-direction: column; height: auto;}
+        .game_console_first_box_wrap_content{width: 100%;}
+        .game_console_first_box_wrap_svg{width: 100%;}
+        .game_console_first_box_wrap_svg img{margin: auto;}
+        .partner_card_wrap img{width: 45%;}
+        .partner_section{padding-bottom: 200px;}
+        .comunity_section_main{padding-top: 0;}
+        .comunity_section{height: 500px;}
+        .slick-slider{padding-left: 15px; padding-right: 15px;}
+
+    }
+
+    @media(max-width:375px){
+        .backed_by_col_img{flex-direction: column; justify-content: center; gap: 15px; align-items: center;}
+        .favoritechain_brand_box_img{width: 45%;}
+        .community_col br{ display: block;}
+        .main_row .col-10{ width: 100%;}
+        .container{ padding-left: 15px !important; padding-right: 15px !important;}
+    }
+
+
+
+
+   

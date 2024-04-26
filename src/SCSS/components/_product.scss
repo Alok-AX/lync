@@ -1,0 +1,46 @@
+.product_section{
+    padding: 100px 0px;
+    background-image: url('../../../src/assets/community-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.product_head{
+    text-align: center;
+    color: var(--white);
+    padding-bottom: 60px;
+}
+.product_head h2 span{
+    background-color: #3F37C9;
+    background: linear-gradient(205.14deg, #3F37C9 30.04%, #4CC9F0 186.57%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: 900;
+    margin-bottom: 5px;
+    font-size: inherit;
+    font-weight: inherit;
+    
+}
+.product_head h2{
+    font-weight: 900;
+}
+.product_card_wrap{
+    padding: 25px;
+    color: var(--white);
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(2, 6, 23, 0) 16.98%, rgba(2, 6, 23, 0.8) 66.5%);
+
+}
+.product_card_wrap img{
+    margin-bottom: 25px;
+}
+.product_card_wrap h5{
+    margin-bottom: 0;
+}
+.product_card_wrap p{
+    color: #8D96B2;
+    margin-bottom: 0;
+}

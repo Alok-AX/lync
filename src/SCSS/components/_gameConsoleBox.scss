@@ -1,0 +1,140 @@
+.game_console_section{
+    padding: 100px 0px;
+    background-image: url('../../../src/assets/community-bg.png');
+    background-repeat: no-repeat;
+    background-size: calc(100% - 30%);
+    background-position: center;
+    position: relative;
+
+}
+
+.gameconsole_main_row{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.game_console_first{
+    width: 60%;
+}
+.game_console_mid{
+    width: 30%;
+}
+.game_console_last{
+    width: 30%;
+}
+
+.game_console_first_box_wrap{
+    padding: 30px;
+    color: var(--white);
+    border-radius: 30px;
+    background: rgb(160,32,184);
+    display: flex;
+    height: 324px;
+    background: linear-gradient(31deg, rgb(160 32 184 / 36%) 6%, rgba(114, 9, 183, 0.06908700980392157) 42%, rgba(0, 212, 255, 0) 100%);
+}
+.game_console_first_box_wrap_svg{
+    position: relative;
+    width: 40%;
+}
+.game_console_first_box_wrap_svg img{
+    width: 200px;
+    height: 200px;
+    transform: rotate(8.38deg);
+}
+
+.game_console_first_box_wrap_content{
+    width: 60%;
+}
+.game_console_first_box_wrap_content button{
+    padding: 8px 24px;
+    background-color: var(--white);
+    border-radius: 100px;
+    color: var(--dark);
+    border: 1px solid var(--white);
+    transition-duration: 0.5s;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 50px;
+}
+.game_console_first_box_wrap_content p{
+    color: #8D96B2;
+    font-weight: 700;
+    
+}
+
+.gaming_console_second_box {
+    padding: 30px;
+    border-radius: 32px;
+    color: var(--white);
+    background: #181330;
+
+
+
+}
+.gaming_console_second_box h4{
+    background-color: #3F37C9;
+    background: linear-gradient(205.14deg, #3F37C9 30.04%, #4CC9F0 186.57%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.gaming_console_second_box p{
+    margin-bottom: 0;
+    color: #8D96B2;
+}
+.gameconsole_third_box p{
+    margin-bottom: 0;
+    color: #8D96B2;
+
+}
+.gameconsole_third_box h4{
+    background-color: #FF0276;
+    background: linear-gradient(94.68deg, #FF0276 2.51%, #7209B7 26.42%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: 900;
+    margin-bottom: 5px;
+
+}
+.gameconsole_third_box{
+    padding: 30px;
+    border-radius: 32px;
+    color: var(--white);
+    background: #181330;
+}
+.game_console_mid{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.game_console_fourth_wrap{
+    background: #181330;
+    padding: 30px;
+    border-radius: 32px;
+    color: var(--white);
+}
+.game_console_fourth_wrap h4{
+    background-color: #3F37C9;
+    background: linear-gradient(205.14deg, #3F37C9 30.04%, #4CC9F0 186.57%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.game_console_fourth_wrap p{
+    margin-bottom: 0;
+}
+.game_console_fourth_wrap img{
+    height: 200px;
+    object-fit: contain;
+}

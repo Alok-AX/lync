@@ -1,0 +1,84 @@
+.banner_section{
+    position: relative;
+    padding-top: 280px;
+    background-image: url('../../../src/assets/banner.png');
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: bottom;
+}
+.hero_first_btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 14px;
+    color: var(--white);
+    Padding : 8px 14px  8px  14px;
+    border-radius: 20px;
+    width: 160px;
+    background: linear-gradient(205.14deg, #3F37C9 30.04%, #4CC9F0 186.57%);
+    transition: width 0.5s ease-in-out;
+
+}
+.hero_first_btn:hover{
+    width: 135px;
+    transition: width 0.5s ease-in-out;
+
+}
+.hero_first_btn img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.hero_second_btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+    color: var(--white);
+
+}
+.hero_second_btn img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.hero_heading{
+    text-align: center;
+}
+.hero_heading h1 span{
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    background-color: #FF0276;
+    background: linear-gradient(94.68deg, #FF0276 2.51%, #7209B7 56.42%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.backed_by_col{
+    padding-top: 100px;
+}
+.backed_by_col h5{
+    color: var(--white);
+    padding-bottom: 30px;
+}
+.backed_by_col_img{
+    max-width: 660px;
+    margin: auto;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: linear-gradient(92.98deg, rgba(217, 217, 217, 0.07) 32.09%, rgba(217, 217, 217, 0.05) 116.98%);
+    border: 1px solid #2f313f;
+
+}
+.backed_by_col_img img{
+    width: 158px;
+    object-fit: contain;
+}
